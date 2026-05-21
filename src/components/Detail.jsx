@@ -20,7 +20,7 @@ function Detail() {
   return (
     <div style={styles.page}>
       <div style={styles.container}>
-        {/* Nút quay lại đã được thiết kế lại đẹp mắt */}
+       
         <Link 
           to="/" 
           style={styles.topBackLink}
@@ -37,14 +37,14 @@ function Detail() {
         </Link>
 
         <div style={styles.card}>
-          {/* Cột trái: Hình ảnh */}
+          
           <div style={styles.imageSection}>
             <div style={styles.imageWrapper}>
               <img src={car.image} alt={car.name} style={styles.image} />
             </div>
           </div>
 
-          {/* Cột phải: Thông tin chi tiết */}
+          
           <div style={styles.infoSection}>
             <div style={styles.headerBox}>
               <span style={styles.brandTag}>{car.brand}</span>
@@ -56,7 +56,7 @@ function Detail() {
               <span style={styles.priceValue}>{car.priceText}</span>
             </div>
 
-            {/* Thông số kỹ thuật dạng Grid nhỏ gọn */}
+            
             <div style={styles.specsGrid}>
               <div style={styles.specCard}>
                 <span style={styles.specLabel}>Năm sản xuất</span>
@@ -68,7 +68,7 @@ function Detail() {
               </div>
             </div>
 
-            {/* Khối mô tả */}
+           
             <div style={styles.divider}></div>
             <div style={styles.descriptionSection}>
               <h3 style={styles.sectionTitle}>Thông tin chi tiết</h3>
@@ -76,7 +76,7 @@ function Detail() {
             </div>
             <div style={styles.divider}></div>
 
-            {/* Hành động */}
+            
             <div style={styles.actionRow}>
               <button
                 style={styles.primaryButton}
@@ -116,20 +116,20 @@ const styles = {
   // Style mới cho nút quay lại
   topBackLink: {
     textDecoration: "none",
-    color: "#475569",          // Màu chữ xám đậm hiện đại
-    background: "#ffffff",     // Nền trắng tiệp với khối nội dung
+    color: "#475569",          
+    background: "#ffffff",     
     fontSize: "14px",
     fontWeight: "600",
-    display: "inline-flex",    // Giúp căn giữa mũi tên và chữ dễ dàng
+    display: "inline-flex",    
     alignItems: "center",
-    gap: "8px",                // Khoảng cách giữa mũi tên và chữ
-    padding: "10px 18px",      // Tạo độ dày dặn cho nút
-    borderRadius: "12px",      // Bo góc mềm mại
-    border: "1px solid #e2e8f0", // Viền mờ sang trọng
-    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.04)", // Đổ bóng nhẹ tạo độ nổi
+    gap: "8px",                
+    padding: "10px 18px",      
+    borderRadius: "12px",      
+    border: "1px solid #e2e8f0", 
+    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.04)", 
     marginBottom: "24px",
     cursor: "pointer",
-    transition: "all 0.2s ease-in-out", // Hiệu ứng hover mượt mà
+    transition: "all 0.2s ease-in-out", 
   },
 
   backArrow: {
